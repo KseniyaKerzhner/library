@@ -1,0 +1,74 @@
+/* COLORS */
+
+/* 
+
+COLORS: 
+#0C0C0E
+#000000
+#BB945F
+#FFFFFF
+#8E8E8E 
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  background-color: #000;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-btn {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.header-ul {
+  display: flex;
+  gap: 30px;
+}
+
+h1 {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #fff;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.header-btn {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+/* WELCOME */
+
+.welcome {
+  height: 600px;
+  background-image: url(assets/png/welcome.png);
+}
