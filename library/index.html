@@ -15,8 +15,8 @@
 
   <body>
     <header class="header">
-      <h1>Brooklyn Public Library</h1>
       <div class="nav-btn">
+        <h1>Brooklyn Public Library</h1>
         <nav class="header-nav">
           <ul class="header-ul">
             <li><a href="#" class="nav-link">About</a></li>
@@ -26,10 +26,10 @@
             <li><a href="#" class="nav-link">Library Card</a></li>
           </ul>
         </nav>
-        <a href="#" class="header-btn">
-          <img src="assets/svg/icon_profile.svg" alt="" />
-        </a>
       </div>
+      <a href="#" class="header-btn">
+        <img src="assets/svg/icon_profile.svg" alt="" />
+      </a>
     </header>
 
     <main>
@@ -60,7 +60,7 @@
         <h2>Favorites</h2>
 
         <div class="favorite-season">
-          <p>Pick favorites of season</p>
+          <p class="text-fav">Pick favorites of season</p>
           <form class="seasons" action="">
             <label class="season" for=""
               ><input type="radio" :checked />Winter</label
@@ -72,11 +72,14 @@
         </div>
         <div class="favorites-4-books">
           <figure class="book">
-            <img src="" alt="" />
+            <img src="assets/png/book-eaters.png" alt="The book eaters" />
             <div class="book-box">
               <p class="title-books">Staff Picks</p>
-              <h4>The Book Eaters</h4>
-              <p class="author">By Sunyi Dean</p>
+              <div>
+                <h4>The Book Eaters</h4>
+                <p class="author">By Sunyi Dean</p>
+              </div>
+
               <p class="book-text">
                 An unusual sci-fi story about a book eater woman who tries
                 desperately to save her dangerous mind-eater son from tradition
@@ -88,11 +91,13 @@
             </div>
           </figure>
           <figure class="book">
-            <img src="" alt="" />
+            <img src="assets/png/book-cackle.png" alt="Cackle" />
             <div class="book-box">
               <p class="title-books">Staff Picks</p>
-              <h4>Cackle</h4>
-              <p class="author">By Rachel Harrison</p>
+              <div>
+                <h4>Cackle</h4>
+                <p class="author">By Rachel Harrison</p>
+              </div>
               <p class="book-text">
                 Are your Halloween movies of choice The Witches of Eastwick and
                 Practical Magic? Look no further than here - where a woman
@@ -103,11 +108,16 @@
             </div>
           </figure>
           <figure class="book">
-            <img src="" alt="" />
+            <img
+              src="assets/png/book-dante.png"
+              alt="Dante: Poet of the Secular World"
+            />
             <div class="book-box">
               <p class="title-books">Staff Picks</p>
-              <h4>Dante: Poet of the Secular World</h4>
-              <p class="author">By Erich Auerbach</p>
+              <div>
+                <h4>Dante: Poet of the Secular World</h4>
+                <p class="author">By Erich Auerbach</p>
+              </div>
               <p class="book-text">
                 Auerbach's engaging book places the 'Comedy' within the
                 tradition of epic, tragedy, and philosophy in general, arguing
@@ -119,17 +129,19 @@
             </div>
           </figure>
           <figure class="book">
-            <img src="" alt="" />
+            <img src="assets/png/book-queen.png" alt="The Last Queen" />
             <div class="book-box">
               <p class="title-books">Staff Picks</p>
-              <h4>The Last Queen</h4>
-              <p class="author">By Clive Irving</p>
+              <div>
+                <h4>The Last Queen</h4>
+                <p class="author">By Clive Irving</p>
+              </div>
               <p class="book-text">
                 A timely and revelatory new biography of Queen Elizabeth (and
                 her family) exploring how the Windsors have evolved and thrived
                 as the modern world has changed around them.
               </p>
-              <button class="buy-btn">Buy</button>
+              <button class="own-btn">Own</button>
             </div>
           </figure>
         </div>
@@ -137,35 +149,49 @@
       <section class="coffee-shop container">
         <h2>Coffee Shop</h2>
 
-        <p>
+        <p class="coffee-text">
           In our library, we have of cozy coffee shop, welcoming in customers
-          with frothy cappuccinos and friendly conversation. you can get a
-          favorite book and read in coffee shop. Our barista to cook you best
-          coffee, and also you can try desserts from bakery.
+          with frothy cappuccinos and friendly conversation. <br />
+          You can get a favorite book and read in coffee shop. Our barista to
+          cook you best coffee, and also you can try desserts from bakery.
         </p>
-        <div class="coffee-tea">
-          <h3>Coffee & Tea</h3>
+        <div class="menu">
+          <div class="coffee-tea">
+            <h3 class="title-coffee">Coffee & Tea</h3>
 
-          <ul>
-            <li>Cold Brew Coffee</li>
-            <li>French Press Pot</li>
-            <li>Espresso</li>
-            <li>Cappuccino</li>
-            <li>Hot tea</li>
-            <li>Cold tea</li>
-          </ul>
-        </div>
-        <div class="deserts">
-          <h3>Desserts & Cakes</h3>
+            <ul class="menu-ul">
+              <li>Cold Brew Coffee</li>
+              <p>$3</p>
+              <li>French Press Pot</li>
+              <p>$5</p>
+              <li>Espresso</li>
+              <p>$2</p>
+              <li>Cappuccino</li>
+              <p>$4</p>
+              <li>Hot tea</li>
+              <p>$2</p>
+              <li>Cold tea</li>
+              <p>$2</p>
+            </ul>
+          </div>
+          <div class="deserts">
+            <h3 class="title-coffee right">Desserts & Cakes</h3>
 
-          <ul>
-            <li>Forest Gateau</li>
-            <li>Blue Moon</li>
-            <li>Truffle Cake</li>
-            <li>Chocolate Cake</li>
-            <li>Poet’s Dream Cake</li>
-            <li>Pineapple Cake</li>
-          </ul>
+            <ul class="menu-ul right">
+              <li>Forest Gateau</li>
+              <p>$16</p>
+              <li>Blue Moon</li>
+              <p>$16</p>
+              <li>Truffle Cake</li>
+              <p>$15</p>
+              <li>Chocolate Cake</li>
+              <p>$18</p>
+              <li>Poet’s Dream Cake</li>
+              <p>$16</p>
+              <li>Pineapple Cake</li>
+              <p>$14</p>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="contacts container">
