@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <header class="header container">
+    <header class="header">
       <h1>Brooklyn Public Library</h1>
       <div class="nav-btn">
         <nav class="header-nav">
@@ -34,18 +34,20 @@
 
     <main>
       <section class="welcome container">
-        <p>Welcome to the Brooklyn Library</p>
+        <!-- <p>Welcome to the Brooklyn Library</p> -->
       </section>
+
       <section class="about container">
         <h2>About</h2>
-        <p>
+
+        <p class="about-text">
           The Brooklyn Library is a free workspace, a large number of books and
           a cozy coffee shop inside
         </p>
         <div class="about-img">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <img src="assets/png/image 1.png" alt="" />
+          <img src="assets/png/image 2.png" alt="" />
+          <img src="assets/png/image 3.png" alt="" />
         </div>
         <div class="dots">
           <button class="dot dot--fill"></button>
@@ -53,80 +55,88 @@
           <button class="dot"></button>
         </div>
       </section>
+
       <section class="favorites container">
         <h2>Favorites</h2>
-        <p>Pick favorites of season</p>
-        <form action="">
-          <label for=""> <input type="radio" />Winter</label>
-          <label for=""><input type="radio" />Spring</label>
-          <label for=""><input type="radio" />Summer</label>
-          <label for=""><input type="radio" />Autumn</label>
-        </form>
+
+        <div class="favorite-season">
+          <p>Pick favorites of season</p>
+          <form class="seasons" action="">
+            <label class="season" for=""
+              ><input type="radio" :checked />Winter</label
+            >
+            <label class="season" for=""><input type="radio" />Spring</label>
+            <label class="season" for=""><input type="radio" />Summer</label>
+            <label class="season" for=""><input type="radio" />Autumn</label>
+          </form>
+        </div>
         <div class="favorites-4-books">
           <figure class="book">
             <img src="" alt="" />
             <div class="book-box">
-              <p>Staff Picks</p>
-              <h4>The Book Eaters By Sunyi Dean</h4>
-              <p>
+              <p class="title-books">Staff Picks</p>
+              <h4>The Book Eaters</h4>
+              <p class="author">By Sunyi Dean</p>
+              <p class="book-text">
                 An unusual sci-fi story about a book eater woman who tries
                 desperately to save her dangerous mind-eater son from tradition
                 and certain death. Complete with dysfunctional family values,
                 light Sapphic romance, and a strong, complex protagonist. Not
                 for the faint of heart.
               </p>
-              <button>Buy</button>
+              <button class="buy-btn">Buy</button>
             </div>
           </figure>
           <figure class="book">
             <img src="" alt="" />
             <div class="book-box">
-              <p>Staff Picks</p>
-              <h4>The Book Eaters By Sunyi Dean</h4>
-              <p>
-                An unusual sci-fi story about a book eater woman who tries
-                desperately to save her dangerous mind-eater son from tradition
-                and certain death. Complete with dysfunctional family values,
-                light Sapphic romance, and a strong, complex protagonist. Not
-                for the faint of heart.
+              <p class="title-books">Staff Picks</p>
+              <h4>Cackle</h4>
+              <p class="author">By Rachel Harrison</p>
+              <p class="book-text">
+                Are your Halloween movies of choice The Witches of Eastwick and
+                Practical Magic? Look no further than here - where a woman
+                recovering from a breakup moves to a quaint town in upstate New
+                York and befriends a beautiful witch.
               </p>
-              <button>Buy</button>
+              <button class="buy-btn">Buy</button>
             </div>
           </figure>
           <figure class="book">
             <img src="" alt="" />
             <div class="book-box">
-              <p>Staff Picks</p>
-              <h4>The Book Eaters By Sunyi Dean</h4>
-              <p>
-                An unusual sci-fi story about a book eater woman who tries
-                desperately to save her dangerous mind-eater son from tradition
-                and certain death. Complete with dysfunctional family values,
-                light Sapphic romance, and a strong, complex protagonist. Not
-                for the faint of heart.
+              <p class="title-books">Staff Picks</p>
+              <h4>Dante: Poet of the Secular World</h4>
+              <p class="author">By Erich Auerbach</p>
+              <p class="book-text">
+                Auerbach's engaging book places the 'Comedy' within the
+                tradition of epic, tragedy, and philosophy in general, arguing
+                for Dante's uniqueness as one who raised the individual and his
+                drama of soul into something of divine significance—an inspired
+                introduction to Dante's main themes.
               </p>
-              <button>Buy</button>
+              <button class="buy-btn">Buy</button>
             </div>
           </figure>
           <figure class="book">
             <img src="" alt="" />
             <div class="book-box">
-              <p>Staff Picks</p>
-              <h4>The Book Eaters By Sunyi Dean</h4>
-              <p>
-                An unusual sci-fi story about a book eater woman who tries
-                desperately to save her dangerous mind-eater son from tradition
-                and certain death. Complete with dysfunctional family values,
-                light Sapphic romance, and a strong, complex protagonist. Not
-                for the faint of heart.
+              <p class="title-books">Staff Picks</p>
+              <h4>The Last Queen</h4>
+              <p class="author">By Clive Irving</p>
+              <p class="book-text">
+                A timely and revelatory new biography of Queen Elizabeth (and
+                her family) exploring how the Windsors have evolved and thrived
+                as the modern world has changed around them.
               </p>
-              <button>Buy</button>
+              <button class="buy-btn">Buy</button>
             </div>
           </figure>
         </div>
       </section>
       <section class="coffee-shop container">
         <h2>Coffee Shop</h2>
+
         <p>
           In our library, we have of cozy coffee shop, welcoming in customers
           with frothy cappuccinos and friendly conversation. you can get a
@@ -135,6 +145,7 @@
         </p>
         <div class="coffee-tea">
           <h3>Coffee & Tea</h3>
+
           <ul>
             <li>Cold Brew Coffee</li>
             <li>French Press Pot</li>
@@ -159,6 +170,7 @@
       </section>
       <section class="contacts container">
         <h2>Our Contacts</h2>
+
         <div>
           <h3>For all Library inquiries:</h3>
           <ul>
