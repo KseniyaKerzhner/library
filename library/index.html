@@ -194,48 +194,74 @@
           </div>
         </div>
       </section>
-      <section class="contacts container">
+      <section class="container">
         <h2>Our Contacts</h2>
 
-        <div>
-          <h3>For all Library inquiries:</h3>
-          <ul>
-            <li>Please call (617) 730-2370</li>
-            <li>For TTY service, please call (617) 730-2370</li>
-            <li>Putterham Library: (617) 730-2385</li>
-          </ul>
-          <h3>Senior Staff</h3>
-          <p>Library Director: Amanda Hirst</p>
+        <div class="contacts-block">
+          <div class="contacts">
+            <h3 class="title-contacts">For all Library inquiries:</h3>
+            <ul class="contacts-ul">
+              <li>Please call (617) 730-2370</li>
+              <li>For TTY service, please call (617) 730-2370</li>
+              <li>Putterham Library: (617) 730-2385</li>
+            </ul>
+
+            <div class="contacts-ul">
+              <h3 class="title-contacts">Senior Staff</h3>
+
+              <div class="lib-dir">
+                <p class="director">Library Director:</p>
+                <p class="title-contacts">Amanda Hirst</p>
+              </div>
+            </div>
+          </div>
+
+          <img src="assets/png/map.png" alt="map" />
         </div>
       </section>
+
       <section class="library-cards container">
         <h2>Digital Library Cards</h2>
 
-        <form>
-          <h3>Find your Library card</h3>
-          <div class="find-box">
-            <label for=""></label>
-            <input type="text" />
+        <div class="find-get-card">
+          <form>
+            <h3 class="find-header">Find your Library card</h3>
+
+            <div class="border-box">
+              <div class="background-box">
+                <h4 class="box-header">Brooklyn Public Library</h4>
+                <div class="find-box">
+                  <label for=""></label>
+                  <input type="text" placeholder="Reader's name" />
+                </div>
+
+                <div class="find-box">
+                  <label for=""></label>
+                  <input type="text" placeholder="Card number" />
+                </div>
+              </div>
+
+              <div class="border-btn">
+                <button class="check-btn">Check the card</button>
+              </div>
+            </div>
+          </form>
+
+          <div class="get-card">
+            <p class="get-header">Get a reader card</p>
+            <p class="get-text">
+              You will be able to see a reader card after logging into account
+              or you can register a new account
+            </p>
+            <div class="btns">
+              <button class="get-btn">Sign Up</button>
+              <button class="get-btn">Log in</button>
+            </div>
           </div>
-          <div class="find-box">
-            <label for=""></label>
-            <input type="text" />
-          </div>
-          <div>
-            <button>Check the card</button>
-          </div>
-        </form>
-        <div>
-          <p>Get a reader card</p>
-          <p>
-            You will be able to see a reader card after logging into account or
-            you can register a new account
-          </p>
-          <button>Sign Up</button>
-          <button>Log in</button>
         </div>
       </section>
     </main>
+
     <footer class="container">
       <div>
         <p>286 Cadman Plaza, New York, NY 11238, United States</p>
