@@ -135,9 +135,14 @@ h2:after {
 .dots {
   display: flex;
   justify-content: center;
-  gap: 8px;
   left: 50%;
   padding-top: 40px;
+}
+
+.border-dots {
+	cursor: pointer;
+	width: 26px;
+	height: 26px;
 }
 
 .dot {
@@ -147,6 +152,7 @@ h2:after {
   border-radius: 50%;
   cursor: pointer;
   border: none;
+	margin: 5px;
 }
 
 .dot--fill {
@@ -373,7 +379,7 @@ h4 {
   position: relative;
 }
 
-.menu-ul li:after {
+.menu-li:after {
   content: "";
   width: 100px;
   height: 1px;
@@ -383,7 +389,7 @@ h4 {
   right: -80%;
 }
 
-.menu-ul p {
+.menu-price {
   font-family: Forum;
   font-size: 20px;
   font-style: normal;
@@ -516,7 +522,6 @@ h4 {
   background: #fff;
   margin-bottom: 25px;
   border: none;
-	p
 }
 
 input::placeholder {

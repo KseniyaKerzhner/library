@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="assets/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico">
     <title>Brooklyn Public Library</title>
   </head>
 
@@ -29,13 +26,13 @@
         </nav>
       </div>
       <a href="#" class="header-btn">
-        <img src="assets/svg/icon_profile.svg" alt="" />
+        <img src="assets/svg/icon_profile.svg" alt="">
       </a>
     </header>
 
     <main>
       <section class="welcome container">
-        <!-- <p>Welcome to the Brooklyn Library</p> -->
+        <p>Welcome to the Brooklyn Library</p>
       </section>
 
       <section class="about container">
@@ -46,14 +43,20 @@
           a cozy coffee shop inside
         </p>
         <div class="about-img">
-          <img src="assets/png/image 1.png" alt="" />
-          <img src="assets/png/image 2.png" alt="" />
-          <img src="assets/png/image 3.png" alt="" />
+          <img src="assets/png/image_1.png" alt="library">
+          <img src="assets/png/image_2.png" alt="busts">
+          <img src="assets/png/image_3.png" alt="book-shelves">
         </div>
         <div class="dots">
-          <button class="dot dot--fill"></button>
+					<div class="border-dots">
+						<button class="dot dot--fill"></button>
+					</div>
+					<div class="border-dots">
+						<button class="dot"></button>
+					</div>
+					<div class="border-dots">
           <button class="dot"></button>
-          <button class="dot"></button>
+				</div>
         </div>
       </section>
 
@@ -62,18 +65,16 @@
 
         <div class="favorite-season">
           <p class="text-fav">Pick favorites of season</p>
-          <form class="seasons" action="">
-            <label class="season" for=""
-              ><input type="radio" :checked />Winter</label
-            >
-            <label class="season" for=""><input type="radio" />Spring</label>
-            <label class="season" for=""><input type="radio" />Summer</label>
-            <label class="season" for=""><input type="radio" />Autumn</label>
+          <form class="seasons" action="#">
+            <label class="season" for="winter"><input type="radio" id="winter" checked>Winter</label>
+            <label class="season" for="spring"><input type="radio" id="spring">Spring</label>
+            <label class="season" for="summer"><input type="radio" id="summer">Summer</label>
+            <label class="season" for="autumn"><input type="radio" id="autumn">Autumn</label>
           </form>
         </div>
         <div class="favorites-4-books">
           <figure class="book">
-            <img src="assets/png/book-eaters.png" alt="The book eaters" />
+            <img src="assets/png/book-eaters.png" alt="The book eaters">
             <div class="book-box">
               <p class="title-books">Staff Picks</p>
               <div>
@@ -92,7 +93,7 @@
             </div>
           </figure>
           <figure class="book">
-            <img src="assets/png/book-cackle.png" alt="Cackle" />
+            <img src="assets/png/book-cackle.png" alt="Cackle">
             <div class="book-box">
               <p class="title-books">Staff Picks</p>
               <div>
@@ -109,10 +110,7 @@
             </div>
           </figure>
           <figure class="book">
-            <img
-              src="assets/png/book-dante.png"
-              alt="Dante: Poet of the Secular World"
-            />
+            <img src="assets/png/book-dante.png" alt="Dante: Poet of the Secular World">
             <div class="book-box">
               <p class="title-books">Staff Picks</p>
               <div>
@@ -130,7 +128,7 @@
             </div>
           </figure>
           <figure class="book">
-            <img src="assets/png/book-queen.png" alt="The Last Queen" />
+            <img src="assets/png/book-queen.png" alt="The Last Queen">
             <div class="book-box">
               <p class="title-books">Staff Picks</p>
               <div>
@@ -152,7 +150,7 @@
 
         <p class="coffee-text">
           In our library, we have of cozy coffee shop, welcoming in customers
-          with frothy cappuccinos and friendly conversation. <br />
+          with frothy cappuccinos and friendly conversation. <br>
           You can get a favorite book and read in coffee shop. Our barista to
           cook you best coffee, and also you can try desserts from bakery.
         </p>
@@ -161,36 +159,36 @@
             <h3 class="title-coffee">Coffee & Tea</h3>
 
             <ul class="menu-ul">
-              <li>Cold Brew Coffee</li>
-              <p>$3</p>
-              <li>French Press Pot</li>
-              <p>$5</p>
-              <li>Espresso</li>
-              <p>$2</p>
-              <li>Cappuccino</li>
-              <p>$4</p>
-              <li>Hot tea</li>
-              <p>$2</p>
-              <li>Cold tea</li>
-              <p>$2</p>
+              <li class="menu-li">Cold Brew Coffee</li>
+              <li class="menu-price">$3</li>
+              <li class="menu-li">French Press Pot</li>
+              <li class="menu-price">$5</li>
+              <li class="menu-li">Espresso</li>
+              <li class="menu-price">$2</li>
+              <li class="menu-li">Cappuccino</li>
+              <li class="menu-price">$4</li>
+              <li class="menu-li">Hot tea</li>
+              <li class="menu-price">$2</li>
+              <li class="menu-li">Cold tea</li>
+              <li class="menu-price">$2</li>
             </ul>
           </div>
           <div class="deserts">
             <h3 class="title-coffee right">Desserts & Cakes</h3>
 
             <ul class="menu-ul right">
-              <li>Forest Gateau</li>
-              <p>$16</p>
-              <li>Blue Moon</li>
-              <p>$16</p>
-              <li>Truffle Cake</li>
-              <p>$15</p>
-              <li>Chocolate Cake</li>
-              <p>$18</p>
-              <li>Poet’s Dream Cake</li>
-              <p>$16</p>
-              <li>Pineapple Cake</li>
-              <p>$14</p>
+              <li  class="menu-li">Forest Gateau</li>
+              <li>$16</li>
+              <li class="menu-li">Blue Moon</li>
+              <li>$16</li>
+              <li class="menu-li">Truffle Cake</li>
+              <li>$15</li>
+              <li class="menu-li">Chocolate Cake</li>
+              <li>$18</li>
+              <li class="menu-li">Poet’s Dream Cake</li>
+              <li>$16</li>
+              <li class="menu-li">Pineapple Cake</li>
+              <li>$14</li>
             </ul>
           </div>
         </div>
@@ -217,7 +215,7 @@
             </div>
           </div>
 
-          <img src="assets/png/map.png" alt="map" />
+          <img src="assets/png/map.png" alt="map">
         </div>
       </section>
 
@@ -232,13 +230,13 @@
               <div class="background-box">
                 <h4 class="box-header">Brooklyn Public Library</h4>
                 <div class="find-box">
-                  <label for=""></label>
-                  <input type="text" placeholder="Reader's name" />
+                  <label for="reader_name"></label>
+                  <input type="text" id="reader_name" placeholder="Reader's name">
                 </div>
 
                 <div class="find-box">
-                  <label for=""></label>
-                  <input type="text" placeholder="Card number" />
+                  <label for="card_number"></label>
+                  <input type="text" id="card_number" placeholder="Card number">
                 </div>
               </div>
 
@@ -271,15 +269,10 @@
         <p>Mon - Fri 08:00 am - 07:00 pm</p>
 
         <div class="social-media">
+          <a href="#"><img src="assets/svg/u_twitter-alt.svg" alt="logo-twitter"></a>
           <a href="#"
-            ><img src="assets/svg/u_twitter-alt.svg" alt="logo-twitter"
-          /></a>
-          <a href="#"
-            ><img src="assets/svg/u_instagram.svg" alt="logo-instagram"
-          /></a>
-          <a href="#"
-            ><img src="assets/svg/u_facebook-f.svg" alt="logo-facebook"
-          /></a>
+            ><img src="assets/svg/u_instagram.svg" alt="logo-instagram"></a>
+          <a href="#"><img src="assets/svg/u_facebook-f.svg" alt="logo-facebook"></a>
         </div>
 
         <p>Sat - Sun 10:00 am - 06:00 pm</p>
