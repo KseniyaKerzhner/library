@@ -120,6 +120,7 @@ h2:after {
   background-image: url(assets/png/welcome.png);
   background-repeat: no-repeat;
   padding-top: 220px;
+	padding-left: 0;
 }
 
 .border-text {
@@ -129,7 +130,7 @@ h2:after {
   padding: 35px 40px;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: #0C0C0E;
 }
 
 .welcome-text {
@@ -143,7 +144,7 @@ h2:after {
   letter-spacing: 3px;
   text-transform: uppercase;
 
-  background-color: #000;
+  background-color: #0C0C0E;;
   width: 520px;
 }
 /* ABOUT */
@@ -168,7 +169,7 @@ h2:after {
   display: flex;
   justify-content: center;
   left: 50%;
-  padding-top: 40px;
+  padding-top: 35px;
 }
 
 .border-dots {
@@ -681,6 +682,10 @@ input::placeholder {
   position: relative;
 }
 
+.footer-info p {
+	text-align: right;
+}
+
 .footer-info a,
 .footer-info a:active,
 .footer-info a:visited {
@@ -704,6 +709,7 @@ li a:hover {
 
 .social-media {
   display: flex;
+	align-items: center;
   gap: 15px;
 }
 
