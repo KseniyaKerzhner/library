@@ -17,7 +17,7 @@ COLORS:
 }
 
 .container {
-	width: 100%;
+	/* width: 100%; */
   max-width: 1440px;
   margin: 0 auto;
   background-color: #fff;
@@ -28,12 +28,17 @@ COLORS:
 html {
   background-color: #0c0c0e;
   scroll-behavior: smooth;
-	/* overflow: hidden; */
+	overflow-x:hidden;
 }
 
 li {
   list-style-type: none;
 }
+
+/* img {
+	width: 100%;
+  height: auto;
+} */
 
 /* HEADER */
 
@@ -235,9 +240,11 @@ input[type="radio"]:checked + .checked-text {
 }
 
 .favorites-4-books {
+	max-width: 1400px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: stretch;
+	justify-content: space-between;
   gap: 223px;
   grid-row-gap: 40px;
 }
@@ -671,7 +678,8 @@ input::placeholder {
 .footer-info {
   display: grid;
   grid-template-columns: 229px 149px;
-  column-gap: 1022px;
+	justify-content: space-between;
+  /* column-gap: 1022px; */
   row-gap: 10px;
   padding-bottom: 30px;
 
@@ -754,6 +762,79 @@ a:hover {
 }
 
 @media (max-width:768px) {
+		
+	.header-nav {
+		display: none;
+	}
+	
+	.burger {
+		display: block;
+		background-color: #0C0C0E;
+		cursor: pointer;
+	}
+	
+	.welcome {
+		background-image: url(assets/png/Welcome-768.png);
+	}
 
+	/* ABOUT */
+
+	.border-dots {
+		display: block;
+	}
+
+	.about-img {
+		display: none;
+	}
+
+	.carousel {
+		display: block;
+		display: flex;
+		justify-content: center;
+	}
+
+	/* FAVORITES */
+
+	.favorites-4-books {
+		display: flex;
+		flex-direction: column;
+		margin-left: 89px;
+	}
+
+	/* COFFEE SHOP */
+
+	.menu {
+		flex-wrap: wrap;
+		/* justify-content: space-between; */
+		gap: 40px;
+	}
+	
+	.deserts {
+		display: flex;
+		flex-direction: column;
+		margin-left: 247px;
+	}
+
+	/* CONTACTS */
+	.contacts-block {
+		flex-wrap: wrap;
+		gap: 100px;
+	}
+
+	/* LIBRARY CARDS */
+
+	.find-get-card {
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 21px;
+	}
+
+	.get-header, .get-text {
+		text-align: center;
+	}
+
+	.btns {
+		justify-content: center;
+	}
 }
 
