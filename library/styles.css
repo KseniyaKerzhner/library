@@ -758,7 +758,59 @@ a:hover {
 } */
 
 @media (max-width:1024px) {
+
+	.header-nav {
+		display: none;
+	}
 	
+	.burger {
+		display: block;
+		background-color: #0C0C0E;
+		cursor: pointer;
+		border: 0;
+	}
+
+	/* ABOUT */
+
+	.about-img {
+		display: none;
+	}
+
+	.carousel2 {
+		display: block;
+		display: flex;
+		justify-content: center;
+		gap: 25px;
+	}
+
+	/* FAVORITES */
+
+	.favorites-4-books {
+		display: flex;
+		flex-direction: column;
+		margin-left: 89px;
+	}
+
+	/* COFFEE SHOP */
+
+	.menu {
+		/* flex-wrap: wrap; */
+		justify-content: space-between;
+		gap: 0px;
+	}
+
+	/* CONTACTS */
+
+	.contacts-block {
+		flex-wrap: wrap;
+		gap: 100px;
+	}
+
+	/* FOOTER */
+
+	.footer-info:after {
+		width: 984px;
+	}
 }
 
 @media (max-width:768px) {
@@ -771,6 +823,7 @@ a:hover {
 		display: block;
 		background-color: #0C0C0E;
 		cursor: pointer;
+		border: 0;
 	}
 	
 	.welcome {
@@ -791,6 +844,10 @@ a:hover {
 		display: block;
 		display: flex;
 		justify-content: center;
+	}
+
+	.carousel2 {
+		display: none;
 	}
 
 	/* FAVORITES */
@@ -835,6 +892,12 @@ a:hover {
 
 	.btns {
 		justify-content: center;
+	}
+
+	/* FOOTER */
+
+	.footer-info:after {
+		width: 728px;
 	}
 }
 
