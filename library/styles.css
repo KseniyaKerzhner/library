@@ -17,7 +17,6 @@ COLORS:
 }
 
 .container {
-	/* width: 100%; */
   max-width: 1440px;
   margin: 0 auto;
   background-color: #fff;
@@ -35,10 +34,6 @@ li {
   list-style-type: none;
 }
 
-/* img {
-	width: 100%;
-  height: auto;
-} */
 
 /* HEADER */
 
@@ -244,9 +239,10 @@ input[type="radio"]:checked + .checked-text {
   display: grid;
   grid-template-columns: repeat(auto-fill, 550px);
   justify-items: center;
-	justify-content: space-around;
-	/* gap: 223px; */
+	justify-content: center;
+	gap: 19%;
   grid-row-gap: 40px;
+	margin-right: 40px;
 }
 
 .book {
@@ -525,6 +521,7 @@ h4 {
 .find-get-card {
   display: flex;
   justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .find-header {
@@ -783,14 +780,6 @@ a:hover {
 		gap: 25px;
 	}
 
-	/* FAVORITES */
-
-	/* .favorites-4-books {
-		display: flex;
-		flex-direction: column;
-		justify-items: center;
-    justify-content: space-around;
-	} */
 
 	/* COFFEE SHOP */
 
@@ -824,6 +813,7 @@ a:hover {
 		background-color: #0C0C0E;
 		cursor: pointer;
 		border: 0;
+		margin-right: 20px;
 	}
 	
 	.welcome {
@@ -875,14 +865,6 @@ a:hover {
 		left: 7%;
 	}
 
-	/* FAVORITES */
-
-	/* .favorites-4-books {
-		display: flex;
-		flex-direction: column;
-		justify-items: center;
-    justify-content: space-around;
-	} */
 
 	/* COFFEE SHOP */
 
