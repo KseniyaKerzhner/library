@@ -242,10 +242,10 @@ input[type="radio"]:checked + .checked-text {
 .favorites-4-books {
 	max-width: 1400px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: stretch;
-	justify-content: space-between;
-  gap: 223px;
+  grid-template-columns: repeat(auto-fill, 550px);
+  justify-items: center;
+	justify-content: space-around;
+	/* gap: 223px; */
   grid-row-gap: 40px;
 }
 
@@ -712,7 +712,7 @@ a:hover {
   content: "";
   position: absolute;
   top: 100%;
-  width: 1400px;
+  width: 100%;
   height: 1px;
   display: block;
   background-color: #fff;
@@ -785,11 +785,12 @@ a:hover {
 
 	/* FAVORITES */
 
-	.favorites-4-books {
+	/* .favorites-4-books {
 		display: flex;
 		flex-direction: column;
-		margin-left: 89px;
-	}
+		justify-items: center;
+    justify-content: space-around;
+	} */
 
 	/* COFFEE SHOP */
 
@@ -806,15 +807,14 @@ a:hover {
 		gap: 100px;
 	}
 
-	/* FOOTER */
-
-	.footer-info:after {
-		width: 984px;
-	}
 }
 
 @media (max-width:768px) {
 		
+	.header {
+		padding-right: 0;
+	}
+
 	.header-nav {
 		display: none;
 	}
@@ -844,19 +844,45 @@ a:hover {
 		display: block;
 		display: flex;
 		justify-content: center;
+		position: relative;
 	}
 
 	.carousel2 {
 		display: none;
 	}
 
+	.dots {
+		padding-top: 20px;
+	}
+
+	.left-btn, .right-btn {
+		width: 24px;
+		height: 24px;
+		display: block;
+		background-color: #fff;
+		cursor: pointer;
+		border: 0;
+		position: absolute;
+	}
+
+	.right-btn {
+		top: 50%;
+		right: 9%;
+	}
+
+	.left-btn {
+		top: 50%;
+		left: 7%;
+	}
+
 	/* FAVORITES */
 
-	.favorites-4-books {
+	/* .favorites-4-books {
 		display: flex;
 		flex-direction: column;
-		margin-left: 89px;
-	}
+		justify-items: center;
+    justify-content: space-around;
+	} */
 
 	/* COFFEE SHOP */
 
@@ -894,10 +920,9 @@ a:hover {
 		justify-content: center;
 	}
 
-	/* FOOTER */
-
-	.footer-info:after {
-		width: 728px;
+	.get-card {
+		width: 600px;
+		height: 220px;
 	}
 }
 
