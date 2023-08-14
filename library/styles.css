@@ -30,6 +30,12 @@ html {
 	overflow-x: hidden;
 }
 
+.wrapper {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+
 li {
 	list-style-type: none;
 }
@@ -805,7 +811,6 @@ a:hover {
 
 	.header {
 		gap: 50px;
-		padding-right: 0px;
 	}
 
 	.header.open .header-nav {
@@ -820,7 +825,8 @@ a:hover {
 	.header-nav {
 		position: absolute;
 		right: -332px;
-		top: 0px;
+		top: 0;
+		width: 332px;
 		background-color: #0c0c0e;
 
 		transform: translateX(100%);
@@ -868,9 +874,6 @@ a:hover {
 
 @media (max-width:768px) {
 
-	.header {
-		padding-right: 0;
-	}
 
 	/* WELCOME */
 
