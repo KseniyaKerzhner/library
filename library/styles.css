@@ -444,7 +444,7 @@ h4 {
 .menu {
 	display: flex;
 	justify-content: space-between;
-	gap: 480px;
+	/* gap: 480px; */
 }
 
 .title-coffee {
@@ -466,6 +466,7 @@ h4 {
 	grid-template-columns: 1fr 1fr;
 	grid-row-gap: 40px;
 	grid-column-gap: 40px;
+	width: 440px;
 }
 
 .menu-ul li {
@@ -929,6 +930,10 @@ a:hover {
 
 	/* COFFEE SHOP */
 
+	.coffee-text {
+		width: 740px;
+	}
+
 	.menu {
 		flex-wrap: wrap;
 		/* justify-content: space-between; */
@@ -938,7 +943,11 @@ a:hover {
 	.deserts {
 		display: flex;
 		flex-direction: column;
-		margin-left: 247px;
+		margin-left: 270px;
+	}
+
+	.right {
+		width: 464px;
 	}
 
 	/* CONTACTS */
