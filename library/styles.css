@@ -222,6 +222,10 @@ h2:after {
 	gap: 25px;
 }
 
+.about-img img {
+	width: 32%;
+}
+
 .dots {
 	display: flex;
 	justify-content: center;
@@ -853,6 +857,10 @@ a:hover {
 		display: flex;
 		justify-content: center;
 		gap: 25px;
+	}
+
+	.carousel2 img {
+		width: 45%;
 	}
 
 
